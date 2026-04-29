@@ -36,7 +36,7 @@
             line-height: 1.6;
         }
 
-        /* Loading Screen */
+
         .loading-screen {
             display: flex;
             align-items: center;
@@ -46,7 +46,7 @@
             color: var(--accent-color);
         }
 
-        /* Auth Container */
+        
         .auth-container {
             display: flex;
             align-items: center;
@@ -244,7 +244,7 @@
             color: var(--accent-light);
         }
 
-        /* Dashboard */
+        
         .dashboard-container {
             display: flex;
             flex-direction: column;
@@ -503,7 +503,7 @@
             color: rgba(203, 213, 225, 0.6);
         }
 
-        /* Scrollbar */
+    
         ::-webkit-scrollbar {
             width: 8px;
             height: 8px;
@@ -522,7 +522,7 @@
             background: var(--accent-light);
         }
 
-        /* Responsive */
+        
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -560,14 +560,14 @@
     </style>
 </head>
 <body>
-    <!-- Loading Screen -->
+    <!
     <div id="loadingScreen" class="loading-screen" style="display: none;">
         Loading...
     </div>
 
-    <!-- Auth Pages -->
+    
     <div id="authPages" class="auth-container">
-        <!-- Login Page -->
+        
         <div id="loginPage" class="auth-container">
             <div class="auth-background">
                 <div class="auth-grid"></div>
@@ -595,7 +595,7 @@
             </div>
         </div>
 
-        <!-- Signup Page -->
+        
         <div id="signupPage" class="auth-container hidden">
             <div class="auth-background">
                 <div class="auth-grid"></div>
@@ -632,7 +632,7 @@
         </div>
     </div>
 
-    <!-- Dashboard -->
+
     <div id="dashboard" class="dashboard-container hidden">
         <header class="dashboard-header">
             <div class="header-content">
@@ -674,7 +674,7 @@
 
     <script>
         // Configuration
-        const API_URL = 'http://localhost:5000/api'; // Change this to your backend URL
+        const API_URL = 'http://localhost:5000/api';
         let currentUser = null;
         let authToken = null;
 
@@ -724,7 +724,7 @@
             }
         }
 
-        // Authentication Functions
+        
         document.getElementById('loginForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             const email = document.getElementById('loginEmail').value;
@@ -807,7 +807,7 @@
             showLogin();
         }
 
-        // Data Functions
+        
         async function loadData() {
             try {
                 document.getElementById('dataContainer').innerHTML = '<div class="loading">Loading your data...</div>';
@@ -904,7 +904,6 @@
             }
         }
 
-        // Utility
         function escapeHtml(text) {
             const div = document.createElement('div');
             div.textContent = text;
