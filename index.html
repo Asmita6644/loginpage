@@ -673,12 +673,12 @@
     </div>
 
     <script>
-        // Configuration
+        
         const API_URL = 'http://localhost:5000/api';
         let currentUser = null;
         let authToken = null;
 
-        // Initialize app
+        
         document.addEventListener('DOMContentLoaded', () => {
             const savedToken = localStorage.getItem('authToken');
             const savedUser = localStorage.getItem('currentUser');
@@ -692,7 +692,7 @@
             }
         });
 
-        // Show/Hide functions
+        
         function showLogin() {
             document.getElementById('loginPage').classList.remove('hidden');
             document.getElementById('signupPage').classList.add('hidden');
